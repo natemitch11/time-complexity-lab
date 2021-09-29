@@ -141,8 +141,7 @@ function squareEveryDigit(number) {
   let ansArr = ''
   let numArr = number.toString().split('')
     for (let i = 0; i < numArr.length; i++) {
-      let newNum = parseInt(numArr[i])
-      ansArr += Math.pow(newNum, 2).toString()
+      ansArr += Math.pow(numArr[i], 2)
     }
   return parseInt(ansArr)
 }
